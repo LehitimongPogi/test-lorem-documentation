@@ -1,0 +1,85 @@
+* {    
+    color: white;
+    font-family: 'Actor', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(40, 40, 40, 1);
+    display: grid;
+}
+
+/* navigation */
+#navbar
+{
+    width: 100%;
+    position: fixed;
+}
+
+#dropdown-checkbox {
+    display: none;
+}
+
+#nav-header-dropdown-container {
+    background-color: rgba(53, 126, 199, 0.9);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.8em 0.5em;
+}
+
+#nav-header > a {
+    font-size: 1.5rem;
+}
+
+#nav-header > a:hover
+{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#dropdown-bars {
+    align-self: center;
+    font-size: 1rem;
+    justify-self: end;
+}
+
+#dropdown-bars > .fa-bars:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-link {
+    background-color: rgba(40, 40, 40, 0.8);
+    display: none;
+    font-size: 1.25rem;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.nav-link:hover
+{
+    background-color: rgba(53, 126, 199, 0.9);
+}
+
+#dropdown-checkbox:checked ~ #nav-link-container > .nav-link {
+    display: block;
+}
+
+#nav-link-container
+{
+    height: max(400px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#main-doc
+{
+    margin-top: 6em;
+    margin: 6em auto 0 auto;
+    width: 90%;
+}
+
